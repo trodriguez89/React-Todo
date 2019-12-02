@@ -1,6 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
+const AddButton = styled.button`
+    margin-top: 10px;
+    margin-left: 2px;
+    border-radius: 5px;
+    background-color: #035D8F;
+    color: white;
+    padding: 5px;
+`
+
 class TodoForm extends React.Component {
     constructor(){
         super();
@@ -31,11 +40,11 @@ class TodoForm extends React.Component {
                 <input 
                 type="text"
                 name="task"
-                placeholder="Enter Task to be Completed"
+                placeholder="Enter a Chore"
                 onChange={this.handleChanges}
                 value={this.state.newTask}
                 />
-                <button>Add Task!</button>
+                <AddButton>Add Task!</AddButton>
             </form>
         );
     }
