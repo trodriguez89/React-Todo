@@ -1,8 +1,16 @@
 .task {
-    border: 2px solid black;
-
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    background-color: #F08080;
+    border-radius: 10px;
+    font-family: 'Solway', serif;
 }
 
 .task.completed {
     text-decoration: line-through;
+    background-color: #90EE90;
 }
